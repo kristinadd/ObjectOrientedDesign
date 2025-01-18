@@ -11,8 +11,7 @@ end
 def diameter
   wheels.collect {|wheel| diameter{wheel}} 
 end
-
+# then calculate
 def diameter(wheel)
   wheel.rim + (rim * 2)
 end
-
