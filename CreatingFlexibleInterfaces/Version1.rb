@@ -9,7 +9,16 @@ class Customer
   def find_trips(on_date:, on_dificulty:, need_bike:)
     trip_service.suitable_trips(on_date: on_date, on_dificulty: on_dificulty, need_bike: need_bike)
   end
+
+  # private
+  # 
+  # attr_reader :trip_service
 end
+
+# now puts customer.trip_service.suitable_trips(on_date: Time.now, on_dificulty: 'easy', need_bike: 'yes')
+# will raise an error because trip service is private.
+# With this encapsulation, external code should only use:
+# customer.find_trips
 
 
 
