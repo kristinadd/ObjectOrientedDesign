@@ -63,8 +63,6 @@ trip = Trip.new(bicycles, mechanic)
 
 trip.prepare_bicycles
 
-
-
 # Violation of Encapsulation
 # The Trip class knows too much about the internal workings of the Mechanic class:
 # It knows the exact sequence of tasks the Mechanic must perform (cleaning, pumping tires, lubing the chain, etc.).
