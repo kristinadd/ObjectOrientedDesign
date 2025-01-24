@@ -14,6 +14,10 @@ class Trip
   end
 end
 
+# This style of coding places the responsibilities in the correct object,
+# a great improvment, but continues to require that Trip have more context that is
+# necessary. Trip still knows that it holds onto an object that can respond to 
+# prepare_bicycle(bicycle) and it must always have this object
 
 class Mechanic
   # Prepares a single bicycle

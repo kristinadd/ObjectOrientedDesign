@@ -28,6 +28,7 @@ class Trip
   end
 
   # Asks the Mechanic to prepare this Trip
+  # "I know what I want, and I trust you to do your part"
   def prepare(mechanic)
     mechanic.prepare_trip(self) # Explicitly passes itself (Trip instance)
     # self refers to how Ruby uses the self keyword to refer to the current 
@@ -38,6 +39,7 @@ class Trip
   # and Mechanic immediatly calls back to Trip to get the list of the 
   # Bycicles that need preparation
 end
+
 
 
 class Mechanic
@@ -83,3 +85,6 @@ mechanic = Mechanic.new
 trip.prepare(mechanic)
 
 
+# This design is far more object oriented. In this example, Trip doesn't 
+# know or care that it has a Mechanic, and it doesn't have any idea what 
+# the Mechanic will do. 
