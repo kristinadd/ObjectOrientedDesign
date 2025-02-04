@@ -26,6 +26,7 @@ class Gear1
   #
   # Gear is definetly responsible for calculating gear_inches, 
   # but Gear shouldn't be calculating wheel diameter  
+  
   def gear_inches # <-- TO THIS
     ratio * diameter
   end

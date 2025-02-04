@@ -1,7 +1,7 @@
 class ObscuringReferences
   attr_reader :data
 
-  def initialize(data)
+  def initialize(data) # Other code using this class must know that data is a 2D array.
     @data = data
   end
 

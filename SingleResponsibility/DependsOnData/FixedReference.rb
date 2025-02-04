@@ -14,6 +14,6 @@ class ObscuringReferences
   Wheel = Struct.new(:rim, :tire)
   def wheelify(data)
     data.collect {|wheel|
-    Wheel.new(cell[0], cell[1])}
+    Wheel.new(wheel[0], wheel[1])}
   end
 end

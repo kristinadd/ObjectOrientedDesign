@@ -67,5 +67,5 @@ trip.prepare_bicycles(mechanic)
 
 # Trip is not tightly coupled to the preparation logic, promoting flexibility and adherence to good design principles.
 # This design ensures that any future changes in how bicycles are prepared will only affect the Mechanic class 
-# and not the Trip class. Let me know if you’d like additional refinements or a different language implementation!end
+# and not the Trip class.
 

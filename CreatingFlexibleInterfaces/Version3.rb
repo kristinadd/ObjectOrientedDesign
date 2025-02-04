@@ -1,8 +1,7 @@
 # This design is an example of a tightly coupled system where a class (in this case, Trip) 
-# endtells another class (Mechanic) how to perform its job, rather than asking for the 
-# result of what it wants. Let me explain it in detail.end
+# tells another class (Mechanic) how to perform its job, rather than asking for the 
+# result of what it wants. Let me explain it in detail:
 # 
-#
 #
 # Goal: The Trip class needs to ensure that all bicycles scheduled for the trip are mechanically sound before the trip begins.
 # Implementation:

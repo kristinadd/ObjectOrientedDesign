@@ -20,11 +20,14 @@ class Gear1
 end
 
 
-# If you can't remove the unnecessary dependencies you shoould isolate them within your class.
+# If you can't remove the unnecessary dependencies you shoould 
+# isolate them within your class.
 #  
 # Concise, explicit, isolated
 #
-# If you can't change the code to inject a Wheel into a Gear, you should isolate the creating of a new Wheel
-# inside the Gear class. The intend is to explicitly expose the dependency while reducing its reach into your class.
+# If you can't change the code to inject a Wheel into a Gear, you 
+# should isolate the creating of a new Wheel
+# inside the Gear class. The intend is to explicitly expose the 
+# dependency while reducing its reach into your class.
 # 
 #
