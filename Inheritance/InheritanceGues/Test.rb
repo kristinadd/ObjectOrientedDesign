@@ -7,5 +7,6 @@ class Test
 
   puts bike.size
   puts bike.front_shock
+  puts bike.spares
 end
 
