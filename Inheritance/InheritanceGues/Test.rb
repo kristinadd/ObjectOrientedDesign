@@ -4,16 +4,15 @@ require_relative 'RoadBike'
 # are in the same directory or subdirectories.
 
 class Test
-  bike = Mtb.new(size: 'S', front_shock: "SpeedShock")
+bike = Mtb.new(front_shock: "Shook34", size: "S", tire_size: 2.7)
 
-  puts bike.size
-  puts bike.front_shock
-  puts bike.spares
+puts bike
+puts bike.tire_size
+puts bike.chain
 
-  road_bike = RoadBike.new(tape_color: "pink")
-  puts road_bike.size
-  puts road_bike.tape_color
+road_bike = RoadBike.new(size: "S", tape_color: "pink")
 
-  puts road_bike.spares
+puts road_bike.tape_color
+puts road_bike.tire_size
 end
 

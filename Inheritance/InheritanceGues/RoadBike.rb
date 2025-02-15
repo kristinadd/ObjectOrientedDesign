@@ -1,11 +1,10 @@
 require_relative 'Bicycle'
 class RoadBike<Bicycle
-  attr_reader :tape_color, :tire_size
+  attr_reader :tape_color
 
   def initialize(**opts)
     super
     @tape_color = opts[:tape_color]
-    @tire_size = opts[:tire_size]
   end
 
   def spares
@@ -13,6 +12,13 @@ class RoadBike<Bicycle
     { tire_size: tire_size,
       tape_color: tape_color
     })
+  end
+
+  # if this class had not default_tire_size method
+  # Ruby will check the super class for that method
+  # and it will use the version in the super class
+  def default_tire_size
+    "23-tire-size-sub-class"
   end
 
   # other methods
