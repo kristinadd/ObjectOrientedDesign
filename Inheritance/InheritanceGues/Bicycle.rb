@@ -41,6 +41,24 @@ class Bicycle
   #   "27-tire-size-super-class"
   # end
 
+  # 👀 any class that uses the uses the template method pattern
+  # must supply an implementation for every message it sends,
+  # even if the only reasonable implementation is the sending class
+  # looks like this:
+  
+  # 🖼️ template method
+  # This allows each subclass to customize only the parts it cares 
+  # about, while still following the same overall structure laid out by the parent.
+  def default_tire_size
+    raise NotImplementedError,
+      "#{self.class} should have emplemented default_tire_size method"
+  end
+
+  # Explicitly stating that subclasses are required to implement
+  # a message provides useful documentation for those who can be
+  # relied upon to read it and useful error messages for those
+  # who cannot.
+
   # other methods
 end
 

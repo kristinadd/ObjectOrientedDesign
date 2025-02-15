@@ -1,5 +1,6 @@
 require_relative 'Mtb'
 require_relative 'RoadBike'
+require_relative 'RecumbentBike'
 # Use require_relative for local files, especially when files 
 # are in the same directory or subdirectories.
 
@@ -14,5 +15,12 @@ road_bike = RoadBike.new(size: "S", tape_color: "pink")
 
 puts road_bike.tape_color
 puts road_bike.tire_size
+
+recumbent_bike = RecumbentBike.new(flag: "tall and orange")
+
+puts recumbent_bike.flag
+puts recumbent_bike.size
+puts recumbent_bike.tire_size
+
 end
 
