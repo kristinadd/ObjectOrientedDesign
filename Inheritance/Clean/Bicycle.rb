@@ -1,8 +1,13 @@
 class Bicycle 
-  attr_reader :size, :chain, :tire_size, :style
+  attr_reader :size, :chain, :tire_size, :style, :pump
   
-  def initialize(style, **opts)
+  # Ruby doesn’t count **opts as another required argument. 
+  # It’s just a “catch-all” for any keyword arguments.
+  # **opts is considered optional; passing nothing will ot raise exception
+  
+  def initialize(style, pump, **opts)
     @style = style
+    @pump = pump
     @size = opts[:size]
     @chain = opts[:chian] || default_chain
     @tire_size = opts[:tire_size] || default_tire_size
@@ -20,5 +25,16 @@ class Bicycle
 
   def default_tire_size
     "23.5-tire-size"
+  end
+
+  def spares
+    { tire: tire_size,
+      chain: chain
+    }.merge(local_spares)
+  end
+
+  def local_spares
+    # hook
+    {}
   end
 end
