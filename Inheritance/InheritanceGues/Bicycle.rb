@@ -8,7 +8,7 @@ class Bicycle
   # already available.
   attr_reader :size, :chain, :tire_size
 
-  def initialize(**opts)
+  def initialize(style: style, **opts) # any change to this initialize will require change in any subclass
     @size = opts[:size]
     @chain = opts[:chain] || default_chain
     @tire_size = opts[:tire_size] || default_tire_size

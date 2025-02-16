@@ -16,7 +16,7 @@ class Test
 # puts road_bike.tape_color
 # puts road_bike.tire_size
 
-recumbent_bike = RecumbentBike.new(flag: "tall and orange")
+recumbent_bike = RecumbentBike.new(flag: "tall and orange", style: "New-Style")
 
 # puts recumbent_bike.flag
 # puts recumbent_bike.size
