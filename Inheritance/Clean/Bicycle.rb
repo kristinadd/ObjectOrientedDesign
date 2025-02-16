@@ -1,7 +1,7 @@
 class Bicycle 
-  attr_reader :size, :chain, :tire_size
+  attr_reader :size, :chain, :tire_size, :style
   
-  def initialize(style: style, **opts)
+  def initialize(style, **opts)
     @style = style
     @size = opts[:size]
     @chain = opts[:chian] || default_chain
@@ -20,9 +20,5 @@ class Bicycle
 
   def default_tire_size
     "23.5-tire-size"
-  end
-
-  def style
-    @style = "purple"
   end
 end
