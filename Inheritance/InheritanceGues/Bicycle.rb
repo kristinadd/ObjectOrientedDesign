@@ -41,7 +41,7 @@ class Bicycle
   #   "27-tire-size-super-class"
   # end
 
-  # 👀 any class that uses the uses the template method pattern
+  # 👀 any class that uses the template method pattern
   # must supply an implementation for every message it sends,
   # even if the only reasonable implementation is the sending class
   # looks like this:

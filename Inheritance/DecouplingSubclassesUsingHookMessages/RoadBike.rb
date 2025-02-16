@@ -27,7 +27,5 @@ class RoadBike<Bicycle
   # Extensible for More Hooks:
   # You can add other hooks (e.g., pre_initialize or post_process) if you need more
   # structured extension points. The parent sets the “template,” and the children only fill in the blanks.
-  
-
 end
 
